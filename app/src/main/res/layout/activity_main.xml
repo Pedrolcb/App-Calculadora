@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/num"
+        android:layout_width="172dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="132dp"
+        android:ems="10"
+        android:hint="Digite o número: "
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/inserir"
+        android:layout_width="163dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="132dp"
+        android:ems="10"
+        android:inputType="number"
+        android:minHeight="48dp"
+        app:layout_constraintStart_toEndOf="@+id/num"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="PxUsage" />
+
+    <Button
+        android:id="@+id/emp"
+        android:layout_width="162dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="212dp"
+        android:onClick="inserir"
+        android:text="Empilhar"
+        android:textSize="19dp"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="PxUsage"
+        tools:layout_editor_absoluteX="12dp" />
+
+    <Button
+        android:id="@+id/desempilhar"
+        android:layout_width="193dp"
+        android:layout_height="69dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="212dp"
+        android:onClick="deletar"
+        android:text="Desempilhar"
+        android:textSize="18dp"
+        app:layout_constraintStart_toEndOf="@+id/emp"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="PxUsage" />
+
+    <Button
+        android:id="@+id/soma"
+        android:layout_width="84dp"
+        android:layout_height="63dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="296dp"
+        android:onClick="somar"
+        android:text="+"
+        android:textSize="25dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="PxUsage" />
+
+    <Button
+        android:id="@+id/sub"
+        android:layout_width="84dp"
+        android:layout_height="63dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="296dp"
+        android:onClick="subtrair"
+        android:text="-"
+        android:textSize="25dp"
+        app:layout_constraintStart_toEndOf="@+id/soma"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="PxUsage" />
+
+
+    <Button
+        android:id="@+id/mult"
+        android:layout_width="84dp"
+        android:layout_height="63dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="296dp"
+        android:onClick="multiplicar"
+        android:text="*"
+        android:textSize="25dp"
+        app:layout_constraintStart_toEndOf="@+id/sub"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="PxUsage" />
+
+    <Button
+        android:id="@+id/div"
+        android:layout_width="84dp"
+        android:layout_height="63dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="296dp"
+        android:layout_marginEnd="35dp"
+        android:onClick="dividir"
+        android:text="/"
+        android:textSize="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/mult"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="PxUsage" />
+
+    <TextView
+        android:id="@+id/stack"
+        android:layout_width="412dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="384dp"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="PxUsage"
+        tools:layout_editor_absoluteX="-1dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
